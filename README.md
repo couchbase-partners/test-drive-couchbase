@@ -7,7 +7,7 @@ The objective of this Test Drive is to make you more familiar with ……….[De
 Briefly introduce your company and products here.
 
 ## Prerequisites
-Ideally you are familiar with both Microsoft Azure, as well as “your product,” though it is not required. Add other perquisites here…………………………….
+(none?)
 
 The test drive spins up a deployment running 3 nodes of Couchbase Server and a single node of Couchbase Sync Gateway.
 
