@@ -22,8 +22,8 @@ Please include support information (email, phone number etc.) if you intend on p
 
 ## Labs
 Great.  Now, we're ready to get started!  Here are the labs we'll work through in order:
-* [1 - Logging into Couchbase](1 - Logging into Couchbase.md)
-* [2 - Key Value](2 - Key Value.md)
+* [1 - Logging into Couchbase](1%20-%20Logging%20into%20Couchbase.md)
+* [2 - Key Value](2%20-%20Key%20Value.md)
 
 ##	Key Takeaways/Summary
 Summarize and recap 2-3 key takeaways from the Test Drive here…………………………………………
