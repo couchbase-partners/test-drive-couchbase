@@ -75,7 +75,7 @@ Great.  Now, we're ready to get started!  Here are the labs we'll work through i
 
 ##	Conclusions and Next Steps
 
-If you're ready, please [visit the Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/couchbase.couchbase-enterprise) to spin up your own Couchbase Server cluster. If you'd like to do more research, please check out the link:https://developer.couchbase.com/[Couchbase Developer portal]. If you'd like to try running Couchbase on your own machine, you can link:https://www.couchbase.com/downloads[download Couchbase Server Enterprise or Couchbase Server Community] for free. It can run on Windows, Mac, and a variety of popular Linux distros.
+If you're ready, please [visit the Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/couchbase.couchbase-enterprise) to spin up your own Couchbase Server cluster. If you'd like to do more research, please check out the [Couchbase Developer portal](https://developer.couchbase.com). If you'd like to try running Couchbase on your own machine, you can [download Couchbase Server Enterprise or Couchbase Server Community](https://www.couchbase.com/downloads) for free. It can run on Windows, Mac, and a variety of popular Linux distros.
 
 ##	Contact Information
 
