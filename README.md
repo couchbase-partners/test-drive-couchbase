@@ -38,7 +38,7 @@ Note that Sync Gateway is only briefly touched on in this test drive. For more i
 
 The first lab needs to be done first. After that, you can elect to work on any of the remaining 3 labs in any order.
 
-Code snippets in this document and the lab documents will appear as a monospaced font, like this: <code>SELECT t.* FROM \`travel-sample\` t</code>
+Code snippets and fields in JSON document will appear as a monospaced font, like this: <code>SELECT t.* FROM \`travel-sample\` t</code>
 
 ## What you will learn from this Test Drive
 
