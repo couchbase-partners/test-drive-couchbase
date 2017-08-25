@@ -190,7 +190,7 @@ Because there are arrays and hierarchies present in JSON data, the N1QL language
 
 ## Summary
 
-In this lab, you have learned all the basics of querying documents with N1QL. You have learned how to use the Query Workbench, SELECT documents, modify documents with N1QL, and some unique features of N1QL to deal with JSON. With N1QL, you can query denormalized JSON documents while being productive very quickly with a familiar SQL syntax.
+In this lab, you have learned the basics of querying documents with N1QL. You have learned how to use the Query Workbench, SELECT documents, modify documents with N1QL, and some unique features of N1QL to deal with JSON. With N1QL, you can query denormalized JSON documents while being productive very quickly with a familiar SQL syntax.
 
 There is a lot more to learn about N1QL, even for SQL experts. Check out the [N1QL documentation for a full language reference](https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/index.html), and if you have tricky N1QL questions, the [Couchbase N1QL forums](https://forums.couchbase.com/c/n1ql) can help you find the answers.
 
