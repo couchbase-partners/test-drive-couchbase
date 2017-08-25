@@ -58,10 +58,10 @@ If you have any questions or problems with this test drive, please contact [part
 
 Great.  Now, we're ready to get started!  Here are the labs we'll work through in order:
 
-* [1 - Couchbase basics](1couchbasebasics.md)
-* [2 - Key/Value document storage](2keyvaluedocumentstorage.md)
-* [3 - Querying with N1QL](3queryingwithn1ql.md)
-* [4 - Full Text Search](4fts.md)
+* [1 - Logging into Couchbase](1%20-%20Logging%20into%20Couchbase.md)
+* [2 - Key Value Document Storage](2%20-%20Key%20Value%20Document%20Storage.md)
+* [3 - Querying with N1QL](3%20-%20Querying%20with%20N1QL.md)
+* [4 - Full Text Search](4%20-%20Full%20Text%20Search.md)
 
 ##	Key Takeaways/Summary
 
