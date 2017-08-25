@@ -6,7 +6,7 @@ This is the third lab for the Couchbase Azure Test Drive. You need to have compl
 
 This lab is designed to get you familiar with the N1QL (Non 1st-Normal-Form Query Language). N1QL is a flavor of SQL that is designed to work with JSON data. If you've used any flavor of SQL in the past, you should be right at home. You will learn about Query Workbench, writing SELECT queries, basic JOINs, and data manipulate queries. At the end of this lab, you will have a basic understanding of N1QL.
 
-N1QL is a very rich language, so this lab will only be scratching the surface. You are invited to check out the link:https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/index.html[extensive N1QL documentation] or the link:http://query.pub.couchbase.com/tutorial/#1[interactive N1QL tutorial], once you have a a handle for the basics.
+N1QL is a very rich language, so this lab will only be scratching the surface. You are invited to check out the [extensive N1QL documentation](https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/index.html) or the [interactive N1QL tutorial](http://query.pub.couchbase.com/tutorial/#1), once you have a a handle for the basics.
 
 This lab will not be covering any clients or SDK usage.
 
@@ -109,22 +109,90 @@ More on `META` later, but for now, running that query should return one result.
         "name": "Air France",
         "sourceairport": "TLV"
     }
-],
+]
 ```
 
 The `airlineid`, `destinationairport`, and `sourceairport` fields all come from the route document. But the `name` field comes from the airline document.
 
-### INSERT/UPDATE/DELETE
+### INSERT
 
-TODO
+With N1QL, you also get the ability to run INSERT, UPDATE, and DELETE queries (and more, like [MERGE](https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/merge.html) and [UPSERT](https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/upsert.html#topic_11_9)).
+
+Let's go through all 3 to see how they work and how they differ from SQL that you've written before.
+
+An `INSERT` will always be inserting into `KEY` and `VALUE` fields. The `VALUE` field can be a JSON literal, or the result of a `SELECT` query. Here's an example of an `INSERT` with a JSON literal:
+
+```sql
+INSERT INTO `travel-sample` (KEY, VALUE)
+VALUES ("lab3document", { "name": "Matthew", "twitter": "@mgroves" } );
+```
+
+This will create a document with the key "lab3document". Now try finding that document by its key (refer back to [lab 2](2keyvaluedocumentstorage.md) if you need to). You can also use `RETURNING` in the query to return back the record that you just inserted:
+
+```sql
+INSERT INTO `travel-sample` t (KEY, VALUE)
+VALUES (UUID(), { "name": "Matthew", "twitter": "@mgroves" } )
+RETURNING t.*, META(t).id;
+```
+
+The `RETURNING` acts like a `SELECT`. In the above query, I've given the "travel-sample" bucket an alias of "t". In the `RETURNING`, I've asked for t.* (the entire document) and I used `META` to get its key. Since I used the `UUID` function to generate a unique key, the `RETURNING` comes in very handy in telling me the value of the key that was generated. Here are the results of the above `INSERT` query:
+
+```javascript
+"results": [
+    {
+        "id": "4ecff4f1-dda0-4c9e-bbe1-3c0d95734253",
+        "name": "Matthew",
+        "twitter": "@mgroves"
+    }
+]
+```
+
+Try this for yourself in Query Workbench.
+
+### UPDATE
+
+`UPDATE` in N1QL is used to make changes to an existing document. Assuming you still have the "lab3document" from above, here's an example of `UPDATE` in action:
+
+```sql
+UPDATE `travel-sample`
+USE KEYS "lab3document"
+SET name = "Matthew Groves", shoeSize = 13;
+```
+
+With this `UPDATE`, I'm changing the value of the existing `name` field to be my first and last name. Also note that I setting the value of `shoeSize`, which previously didn't exist in the document.
+
+`RETURNING` can also be used with an `UPDATE`.
+
+### DELETE
+
+Finally, let's get rid of this "lab3document" with a `DELETE` query.
+
+```sql
+DELETE FROM `travel-sample`
+USE KEYS "lab3document";
+```
+
+This will delete the document with the matching key. If you use a `RETURNING` with a `DELETE`, it will return the document that you deleted.
 
 ### META and other JSON tidbits (TODO)
 
-TODO
+`META` has been mentioned a few times already, and `UUID` was also mentioned. These are [N1QL functions](https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/functions.html) (of which there are many). `UUID` simply generates a universally unique identifier (similar to a GUID). `META` is a function that, applied to a document, returns metadata about that document. The document key (`id`) is the main reason you'd use `META`, but there is other information in there that might be of some use.
+
+Before wrapping up, there is one more basic thing about N1QL that should be made explicit. Earlier, a "route" document was used as an example. This document contains an array of objects as a field. N1QL needs a way to address both array elements and fields within an object hierarchy. Intuitively, you'll use the JavaScript array `[]` syntax and dotted `.` syntax. Here's an example of a query that gets the first item from the schedule array, and the `day` value within that item.
+
+```sql
+SELECT t.schedule[0].day
+FROM `travel-sample` t
+WHERE META(t).id = "route_10000";
+```
+
+Because there are arrays and hierarchies present in JSON data, the N1QL language has added a lot of statements, functions, and operators to query different shapes of data. Because of this, N1QL is considered a "superset" of SQL.
 
 ## Summary
 
 In this lab, you have learned all the basics of querying documents with N1QL. You have learned how to use the Query Workbench, SELECT documents, modify documents with N1QL, and some unique features of N1QL to deal with JSON. With N1QL, you can query denormalized JSON documents while being productive very quickly with a familiar SQL syntax.
+
+There is a lot more to learn about N1QL, even for SQL experts. Check out the [N1QL documentation for a full language reference](https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/index.html), and if you have tricky N1QL questions, the [Couchbase N1QL forums](https://forums.couchbase.com/c/n1ql) can help you find the answers.
 
 N1QL is a great tool for finding documents that meet strict criteria. It is not necessarily the best tool for a generalized search. For that, please check out [lab 4 to learn how find documents with a full text search](4fts.md)
 
