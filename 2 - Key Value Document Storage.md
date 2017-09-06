@@ -14,7 +14,7 @@ This lab will not be covering any clients or SDK usage.
 
 The fundamental unit of data in Couchbase Server (or any document database) is the document.
 
-Each document is simply a JSON entity. It could be a JSON array, but it is typically a single JSON document. This is an example of a document that is it the travel-sample bucket that you loaded in the previous lab.
+Each document is simply a JSON entity. It could be a JSON array, but it is typically a single JSON document. This is an example of a document that is in the travel-sample bucket that you loaded in the previous lab.
 
 ```javascript
  {
