@@ -1,4 +1,4 @@
-# Lab 0 - Starting the Test Drive
+# Lab 0b - Starting the GCP Test Drive
 
 These are step by step instruction to start the Couchbase Test Drive on Google Cloud Platform.  If you have found this manual from the Test Drive itself you may have already completed these steps.  
 

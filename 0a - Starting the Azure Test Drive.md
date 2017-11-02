@@ -1,4 +1,4 @@
-# Lab 1 - Logging into Couchbase
+# Lab 0a - Starting the Azure Test Drive
 
 These are step by step instruction to start the Couchbase Test Drive on Azure.  If you have found this manual from the Test Drive itself you may have already completed these steps.  
 
