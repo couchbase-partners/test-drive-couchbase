@@ -1,6 +1,6 @@
 # Lab 2 - Key/Value Document Storage
 
-This is the second lab for the Couchbase Test Drive. You need to have completed the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab.
+This is the second lab for the Couchbase Test Drive. You need to have completed [Lab 1 - Logging into Couchbase](1%20-%20Logging%20into%20Couchbase.md) before starting this lab.
 
 ## Objective
 

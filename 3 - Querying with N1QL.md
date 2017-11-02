@@ -1,6 +1,6 @@
 # Lab 3 - Querying with N1QL
 
-This is the third lab for the Couchbase Test Drive. You need to have completed at least the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab. The [second lab (Key/Value Document Storage)](2keyvaluedocumentstorage.md) is optional, but recommended.
+This is the third lab for the Couchbase Test Drive. This is the second lab for the Couchbase Test Drive. You need to have completed [Lab 1 - Logging into Couchbase](1%20-%20Logging%20into%20Couchbase.md) before starting this lab.
 
 ## Objective
 

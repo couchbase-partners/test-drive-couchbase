@@ -1,6 +1,6 @@
 # Lab 4 - Full Text Search
 
-This is the fourth lab for the Couchbase Test Drive. You need to have completed at least the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab. The [second lab (Key/Value Document Storage)](2keyvaluedocumentstorage.md) and the [third lab (N1QL)](3queryingwithn1ql.md) are optional, but recommended.
+This is the fourth lab for the Couchbase Test Drive. This is the second lab for the Couchbase Test Drive. You need to have completed [Lab 1 - Logging into Couchbase](1%20-%20Logging%20into%20Couchbase.md) before starting this lab.
 
 ## Objective
 
