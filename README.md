@@ -60,8 +60,8 @@ Great.  Now, we're ready to get started!  The test drive labs can be run on eith
 
 Instructions on creating a cluster with Test Drive are here:
 
-* [0a - Starting the Azure Test Drive](0%20-%20Starting%20the%20GCP%20Test%20Drive.md)
-* [0b - Starting the GCP Test Drive](0%20-%20Starting%20the%20GCP%20Test%20Drive.md)
+* [0a - Starting the Azure Test Drive](0a%20-%20Starting%20the%20Azure%20Test%20Drive.md)
+* [0b - Starting the GCP Test Drive](0b%20-%20Starting%20the%20GCP%20Test%20Drive.md)
 
 With a cluster all ready, here are the labs we'll work through in order:
 
