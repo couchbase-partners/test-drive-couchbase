@@ -1,6 +1,6 @@
-# Lab 3 - Full Text Search
+# Lab 4 - Full Text Search
 
-This is the fourth lab for the Couchbase Azure Test Drive. You need to have completed at least the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab. The [second lab (Key/Value Document Storage)](2keyvaluedocumentstorage.md) and the [third lab (N1QL)](3queryingwithn1ql.md) are optional, but recommended.
+This is the fourth lab for the Couchbase Test Drive. You need to have completed at least the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab. The [second lab (Key/Value Document Storage)](2keyvaluedocumentstorage.md) and the [third lab (N1QL)](3queryingwithn1ql.md) are optional, but recommended.
 
 ## Objective
 
@@ -16,7 +16,8 @@ This lab will not be covering any clients or SDK usage.
 
 In the "travel-sample" bucket, there are a number of "landmark" documents. These landmarks documents contain information about places, including address, city, geolocation, name, url, and a description (content). Here's an example document (key **landmark_11772**):
 
-```javascript
+```
+javascript
 {
 {
   "name": "The Griddle Café",
@@ -42,7 +43,7 @@ Let's build a index to help our users find interesting results. But let's keep i
 
 From the Couchbase Console, go to "Indexes" then click "Full Text".
 
-![Full Text Search indexes](/images/0401-indexes-full-text.png)
+![Full Text Search indexes](/images/4/0401-indexes-full-text.png)
 
 Click the "New Full Text Index" button to create a new FTS index. I'll name the index "travel-sample-idx". Next, I'll choose the "travel-sample" bucket. After that, I'll expand the "Type Mappings" section. There's already a "default" type mapping. If I saved this index now, this index would search on every field in every document (even airline documents, and even the geolocation fields and address fields in landmark documents, which will not be helpful to a user searching for "breakfast").
 
@@ -52,13 +53,13 @@ Click "Add Type Mapping". Enter "landmark" as the type name. Notice that the "Ty
 
 Check the box "only index specified field" and click "ok" to save.
 
-![Create index](/images/0402-create-index.png)
+![Create index](/images/4/0402-create-index.png)
 
 Next, we need to add a "child field" to this index. Right now, we only want to index the `content` field of landmark documents. Hover over the "landmark" record's and the "+" button. Click "insert child field". Enter "content" and the field and "content" as the "searchable as". Also check the "store" option (more on that later). Click "ok" to save.
 
 After that, hover over the "default" record, click "edit" and uncheck the "enabled" option. We aren't going to use the default index, so this will save time when creating the initial index.
 
-![Create index](/images/0403-create-index.gif)
+![Create index](/images/4/0403-create-index.gif)
 
 Finally, click the "Create Index" button. This will kick off the initial indexing process. You can keep clicking the "> Refresh" button to see the progress. Since this index is only on "landmark" documents, and only one field within those documents, the indexing should be done quickly. Further changes/additions to documents will be automatically indexed on an incremental basis (or you can manually update if you choose).
 
@@ -66,11 +67,11 @@ Finally, click the "Create Index" button. This will kick off the initial indexin
 
 Now that we have a search index, let's try out some searches. Click "Full Text" to back to the list of FTS indexes. In the dropdown box at the top, select "travel-sample-idx". Enter a search term like "breakfast" and click "Search".
 
-![Create index](/images/0404-search-breakfast.png)
+![Create index](/images/4/0404-search-breakfast.png)
 
 When searching for "breakfast", you should get 81 results. The most relevant results will appear at the top (just like a web search engine). You can check "Show Scoring" to see the actual score calculations if you'd like.
 
-![Create index](/images/0405-search-results.png)
+![Create index](/images/4/0405-search-results.png)
 
 Try search for "breakfast" and then "bed and breakfast". The former returns 81 results, the latter returns 85 results. Also notice that document **landmark_2807** appears in the results of both: 2nd in the former, 4th in the latter.
 

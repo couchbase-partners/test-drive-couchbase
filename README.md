@@ -1,4 +1,4 @@
-# Couchbase Cloud Test Drive Manual
+# Couchbase Test Drive Manual
 
 ## Introduction
 The objective of this Test Drive is to familiarize you with the basics of Couchbase Server and Couchbase Sync Gateway. You will go through four exercises using this test drive:
@@ -28,11 +28,11 @@ Couchbase customers include industry leaders like AOL, Amadeus, AT&T, Cisco, Com
 
 ## Prerequisites
 
-The only prerequisite is a web browser and an Azure account.
+The only prerequisite is a web browser.
 
 In this test drive, a 3 node cluster of Couchbase Server and 1 instance of Couchbase Sync Gateway will be at your disposal.
 
-Note that Sync Gateway is only briefly touched on in this test drive. For more information on using Sync Gateway and the entire Couchbase Mobile solution, please contact [partners@couchbase.com](mailto:partners@couchbase.com) or [sales@couchbase.com](mailto:sales@couchbase.com) to plan a proof-of-concept.
+Note that Sync Gateway is only briefly touched on in this test drive. For more information on using Sync Gateway and the entire Couchbase Mobile solution, please contact [partners@couchbase.com](mailto:partners@couchbase.com) to plan a proof-of-concept.
 
 ## Guide to using this test drive
 
@@ -44,7 +44,7 @@ Code snippets and fields in JSON document will appear as a monospaced font, like
 
 You will learn the basics of using Couchbase Server in this test drive.
 
-After you complete these labs, we invite you to [visit the Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/couchbase.couchbase-enterprise) to spin up your own Couchbase Server cluster.
+After you complete these labs, we invite you to [visit Google Cloud Launcher](https://console.cloud.google.com/launcher/partners/couchbase-public) to spin up your own Couchbase Server cluster.
 
 Couchbase Server offers a full enterprise document database solution. A performant key/value database engine with a memory-first architecture is at the core of Couchbase Server. The Couchbase Console provides a built-in UI that makes it easy to perform ops and dev tasks out of the box. Couchbase Server also has robust querying options to match your use cases, including [N1QL (which is SQL for JSON)](https://www.couchbase.com/products/n1ql) and a language aware full text search engine built on the [Bleve](http://www.blevesearch.com/) engine. After completing these labs, you will understand how to use all these components.
 
@@ -52,11 +52,18 @@ In addition, you will also be taking a very shallow look at Sync Gateway, which 
 
 ## Test Drive Support
 
-If you have any questions or problems with this test drive, please contact [partners@couchbase.com](mailto:partners@couchbase.com) or [sales@couchbase.com](mailto:sales@couchbase.com).
+If you have any questions or problems with this test drive, please contact [partners@couchbase.com](mailto:partners@couchbase.com).
 
 ## Labs
 
-Great.  Now, we're ready to get started!  Here are the labs we'll work through in order:
+Great.  Now, we're ready to get started!  The test drive labs can be run on either Azure or GCP.  You can even use these lab materials on a cluster you provision yourself.  This is sometimes the case if attending a Couchbase Day.
+
+Instructions on creating a cluster with Test Drive are here:
+
+* [0a - Starting the Azure Test Drive](0%20-%20Starting%20the%20GCP%20Test%20Drive.md)
+* [0b - Starting the GCP Test Drive](0%20-%20Starting%20the%20GCP%20Test%20Drive.md)
+
+With a cluster all ready, here are the labs we'll work through in order:
 
 * [1 - Logging into Couchbase](1%20-%20Logging%20into%20Couchbase.md)
 * [2 - Key Value Document Storage](2%20-%20Key%20Value%20Document%20Storage.md)
@@ -65,7 +72,7 @@ Great.  Now, we're ready to get started!  Here are the labs we'll work through i
 
 ##	Key Takeaways/Summary
 
-**Couchbase basics**: Getting a cluster up and running in Azure. The Couchbase Console makes it easy to view your cluster and perform both dev and ops tasks.
+**Couchbase basics**: Logging into a cluster. The Couchbase Console makes it easy to view your cluster and perform both dev and ops tasks.
 
 **Key/value document storage**: Documents are keys and JSON values. You can add them quickly, find them by key, make changes by key (as long as it's valid JSON), and delete them by key.
 
@@ -75,8 +82,8 @@ Great.  Now, we're ready to get started!  Here are the labs we'll work through i
 
 ##	Conclusions and Next Steps
 
-If you're ready, please [visit the Azure Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/couchbase.couchbase-enterprise) to spin up your own Couchbase Server cluster. If you'd like to do more research, please check out the [Couchbase Developer portal](https://developer.couchbase.com). If you'd like to try running Couchbase on your own machine, you can [download Couchbase Server Enterprise or Couchbase Server Community](https://www.couchbase.com/downloads) for free. It can run on Windows, Mac, and a variety of popular Linux distros.
+If you're ready, you can visit a cloud Marketplace to spin up your own Couchbase Enterprise cluster. If you'd like to do more research, please check out the [Couchbase Developer portal](https://developer.couchbase.com). If you'd like to try running Couchbase on your own machine, you can [download Couchbase Server Enterprise or Couchbase Server Community](https://www.couchbase.com/downloads) for free. It can run on Windows, Mac, and a variety of popular Linux distros.
 
 ##	Contact Information
 
-If you have any questions about Couchbase Server or Couchbase Mobile, please contact [partners@couchbase.com](mailto:partners@couchbase.com) or [sales@couchbase.com](mailto:sales@couchbase.com).
+If you have any questions about Couchbase Server or Couchbase Mobile, please contact [partners@couchbase.com](mailto:partners@couchbase.com).

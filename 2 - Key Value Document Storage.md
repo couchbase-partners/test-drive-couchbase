@@ -1,6 +1,6 @@
 # Lab 2 - Key/Value Document Storage
 
-This is the second lab for the Couchbase Azure Test Drive. You need to have completed the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab.
+This is the second lab for the Couchbase Test Drive. You need to have completed the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab.
 
 ## Objective
 
@@ -60,15 +60,15 @@ From the Couchbase Console, click "Data Buckets".
 
 The "travel-sample" bucket should be listed (it was created in the first lab). Locate it on list of buckets and click the "Documents" button.
 
-![List of buckets in Couchbase Console](/images/0201-bucket-list.png)
+![List of buckets in Couchbase Console](/images/2/0201-bucket-list.png)
 
 You should now see a list of documents. The ID column shows the key for each document, and the Content column shows a partial excerpt of the JSON document. To create a new document, click the "Create Document" button.
 
-![List of documents in a bucket](/images/0202-document-list.png)
+![List of documents in a bucket](/images/2/0202-document-list.png)
 
 After clicking the "Create Document" button, you will be prompted for a document ID. It must be unique to that bucket. If I typed in "airline_10" for instance, I would get an error message. Enter a creative ID like "lab2document". A document with that key and some default JSON will be created, and you will be taken to a page where you can make changes to the JSON.
 
-![Edit document](/images/0203-edit-document.png)
+![Edit document](/images/2/0203-edit-document.png)
 
 Enter the following JSON and then click the "Save" button.
 
@@ -85,7 +85,7 @@ If, at any point, the JSON you are entering isn't valid, an error message will a
 
 This bucket has a large amount of documents. You can go right to a specific document by using its key. Enter the key **route_10000** and click the "Lookup Id" button.
 
-![Lookup document by key](/images/0204-lookup-by-key.png)
+![Lookup document by key](/images/2/0204-lookup-by-key.png)
 
 You should be taken to the document that was shown at the very beginning of this lab. It's an airline route from Ben Gurion Airport in Tel Aviv (TLV) to Marseille Provence Airport in France (MRS). We don't know the name of the airline from looking at just this document, but note that the `airlineid` has a value of **airline_137**. To find out the name of the airline, look up that document by key.
 
@@ -117,4 +117,4 @@ Note that there are no referential constraints to take into account. If I delete
 
 In this lab, you have learned all the basics of interacting with documents and buckets of documents. You have create a document, edited a document, looked up documents by key, and deleted a document. With this core set of operations and a denormalized data model, you can accomplish some very powerful things.
 
-However, there are situations where key lookups aren't the best approach to finding documents. Please continue with [lab 3 to learn how to query documents with N1QL](3queryingwithn1ql.md) and [lab 4 to learn how find documents with a full text search](4fts.md).
+However, there are situations where key lookups aren't the best approach to finding documents. Please continue with [lab 3 to learn how to query documents with N1QL](3%20-%20Querying%20with%20N1QL.md).

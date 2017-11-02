@@ -1,6 +1,6 @@
 # Lab 3 - Querying with N1QL
 
-This is the third lab for the Couchbase Azure Test Drive. You need to have completed at least the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab. The [second lab (Key/Value Document Storage)](2keyvaluedocumentstorage.md) is optional, but recommended.
+This is the third lab for the Couchbase Test Drive. You need to have completed at least the [first lab (Couchbase basics)](1couchbasebasics.md) before starting this lab. The [second lab (Key/Value Document Storage)](2keyvaluedocumentstorage.md) is optional, but recommended.
 
 ## Objective
 
@@ -16,7 +16,7 @@ This lab will not be covering any clients or SDK usage.
 
 From the Couchbase Console, click "Query". You will taken to an interactive page that allows you to enter a N1QL query, execute it, and see the results. Try a very simple query like `SELECT 1;`. You can type it in, end with a semicolon, and press "enter", or you can just click the "Execute" button. In the "Result" window, you'll see the full response to your request. It includes fields like `success` and `metrics`, but focus on the `results` field. It's an array of JSON documents. In this case, it's only one document with one field (assigned a name of `$1`, since you didn't specify a name), and a value of 1.
 
-![First N1QL query](/images/0301-first-n1ql.png)
+![First N1QL query](/images/3/0301-first-n1ql.png)
 
 Before doing anything more advanced, you must first understand the basics of indexing. In relational databases, you often don't need to create indexes on small tables, because a table scan is often fast enough for small amounts of data. So, indexes aren't required.
 
@@ -24,13 +24,13 @@ In a huge collection of documents, you must create an index on the fields you wa
 
 In Couchbase Server, You can optionally create an index on a buckeet that is roughly equivalent to a table scan: `CREATE PRIMARY INDEX def_primary on bucketname`. Fortunately, this index has already been created on the "travel-sample" bucket automatically, along with several other indexes. Click the "Indexes" tab in the Couchbase Console to see what indexes exist.
 
-![Indexes](/images/0302-indexes.png)
+![Indexes](/images/3/0302-indexes.png)
 
 An index called `def_primary` already exists on travel-sample.
 
 There are several other indexes on this bucket as well. For instance, if you example the `def_type` index, you'll see that the `type` field is being indexed.
 
-![Index on type field](/images/0303-def-type-index.png)
+![Index on type field](/images/3/0303-def-type-index.png)
 
 Consider this query:
 
@@ -194,6 +194,6 @@ In this lab, you have learned the basics of querying documents with N1QL. You ha
 
 There is a lot more to learn about N1QL, even for SQL experts. Check out the [N1QL documentation for a full language reference](https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/index.html), and if you have tricky N1QL questions, the [Couchbase N1QL forums](https://forums.couchbase.com/c/n1ql) can help you find the answers.
 
-N1QL is a great tool for finding documents that meet strict criteria. It is not necessarily the best tool for a generalized search. For that, please check out [lab 4 to learn how find documents with a full text search](4fts.md)
+N1QL is a great tool for finding documents that meet strict criteria. It is not necessarily the best tool for a generalized search. For that, please check out [lab 4 to learn how find documents with a full text search](4%20-%20Full%20Text%20Search.md)
 
 _Important note: If you can use a key/value operation, you should: it will be faster than running a query. However, key/value operations are sometimes not feasible for certain data access patterns, and that's where N1QL can help._
