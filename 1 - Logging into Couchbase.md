@@ -14,6 +14,8 @@ This lab will not be covering any clients or SDK usage. You will not do anything
 
 Start by going to the Server Admin URL. You will be prompted with a login form. Enter the credentials you received in the last step. Click "Sign In".
 
+![Travel-sample bucket](/images/1/0105-login.png)
+
 Once you successfully login, you will see the Couchbase Enterprise Edition console. You will be looking at the "Overview" section initially. Feel free to navigate around to anything that interests you. Here are a few places of interest to get you started:
 
 * __Server Nodes__ - This will show you a list of all the nodes in the cluster. Each "node" is a separate VM with Couchbase Server installed that joins together into a single "cluster". In a production deployment, you can add nodes to a cluster within the UI, with a command line utility, or with a REST API.
