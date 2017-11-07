@@ -174,7 +174,7 @@ USE KEYS "lab3document";
 
 This will delete the document with the matching key. If you use a `RETURNING` with a `DELETE`, it will return the document that you deleted.
 
-### META and other JSON tidbits (TODO)
+### META and other JSON tidbits
 
 `META` has been mentioned a few times already, and `UUID` was also mentioned. These are [N1QL functions](https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/functions.html) (of which there are many). `UUID` simply generates a universally unique identifier (similar to a GUID). `META` is a function that, applied to a document, returns metadata about that document. The document key (`id`) is the main reason you'd use `META`, but there is other information in there that might be of some use.
 
