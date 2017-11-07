@@ -61,11 +61,11 @@ After that, hover over the "default" record, click "edit" and uncheck the "enabl
 
 ![Create index](/images/4/0403-create-index.gif)
 
-Finally, click the "Create Index" button. This will kick off the initial indexing process. You can keep clicking the "> Refresh" button to see the progress. Since this index is only on "landmark" documents, and only one field within those documents, the indexing should be done quickly. Further changes/additions to documents will be automatically indexed on an incremental basis (or you can manually update if you choose).
+Finally, click the "Create Index" button. This will kick off the initial indexing process. You can watch the progress on the following screen (you will see both a "doc count" and an "indexing progress" percentage that will be updated automatically). Since this index is only on "landmark" documents, and only one field within those documents, the indexing should be done quickly. Further changes/additions to documents will be automatically indexed on an incremental basis (or you can manually update if you choose).
 
 ### Executing a search
 
-Now that we have a search index, let's try out some searches. Click "Full Text" to back to the list of FTS indexes. In the dropdown box at the top, select "travel-sample-idx". Enter a search term like "breakfast" and click "Search".
+Now that we have a search index, let's try out some searches. Click "Full Text" to back to the list of FTS indexes. Click the "travel-sample-idx" index and a "search this index..." text box will appear. Enter a search term like "breakfast" and click "Search".
 
 ![Create index](/images/4/0404-search-breakfast.png)
 
