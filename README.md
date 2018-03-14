@@ -44,8 +44,6 @@ Code snippets and fields in JSON document will appear as a monospaced font, like
 
 You will learn the basics of using Couchbase Server in this test drive.
 
-After you complete these labs, we invite you to [visit Google Cloud Launcher](https://console.cloud.google.com/launcher/partners/couchbase-public) to spin up your own Couchbase Server cluster.
-
 Couchbase Server offers a full enterprise document database solution. A performant key/value database engine with a memory-first architecture is at the core of Couchbase Server. The Couchbase Console provides a built-in UI that makes it easy to perform ops and dev tasks out of the box. Couchbase Server also has robust querying options to match your use cases, including [N1QL (which is SQL for JSON)](https://www.couchbase.com/products/n1ql) and a language aware full text search engine built on the [Bleve](http://www.blevesearch.com/) engine. After completing these labs, you will understand how to use all these components.
 
 In addition, you will also be taking a very shallow look at Sync Gateway, which is part of the [Couchbase Mobile platform](https://www.couchbase.com/products/mobile).
