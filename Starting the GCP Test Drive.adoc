@@ -1,4 +1,4 @@
-== Lab 0b - Starting the GCP Test Drive
+== Lab - Starting the GCP Test Drive
 
 These are step by step instruction to start the Couchbase Test Drive on
 Google Cloud Platform. If you have found this manual from the Test Drive
@@ -38,10 +38,12 @@ image:/images/0b/6.png[Start test drive]
 The framework will show the launch in progress. This takes a few
 minutes.
 
-What Orbitera is doing: * Deploying 3 nodes of Couchbase Server on 3 GCE
-VMs * Setting up each node * Creating a cluster, and adding all 3 nodes
-to the cluster * Creating administrator credentials * Deploying 1 node
-of Sync Gateway on a GCE VM.
+What Orbitera is doing:
+* Deploying 3 nodes of Couchbase Server on 3 GCE VMs
+* Setting up each node
+* Creating a cluster, and adding all 3 nodes to the cluster
+* Creating administrator credentials
+* Deploying 1 node of Sync Gateway on a GCE VM.
 
 When you use the full GCP Cloud Launcher, it will do all these
 operations for you as well. However, you will have more control over the
@@ -58,14 +60,12 @@ image:/images/0b/8.png[Start test drive]
 
 This includes:
 
-* Server Admin URL (where you’ll go in your browser to login to the
-Couchbase Server Console)
+* Server Admin URL (where you’ll go in your browser to login to the Couchbase Server Console)
 * Admin Credentials (how you’ll login to the Console)
-* Sync Gateway Admin URL (where you’ll go in your browser to view the
-Sync Gateway console)
+* Sync Gateway Admin URL (where you’ll go in your browser to view the Sync Gateway console)
 
 You may want to bookmark these URLs and make a note of the access
 information, since you will be using it throughout the remaining labs.
 
 Great! Now you’re all set to get started with
-link:1%20-%20Logging%20into%20Couchbase.md[Lab 1].
+link:++Logging in to Couchbase.md++[the overview].

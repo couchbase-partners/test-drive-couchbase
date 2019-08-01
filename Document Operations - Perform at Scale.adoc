@@ -1,0 +1,32 @@
+== Lab - Core Document Operations - Perform at Scale
+
+=== How this Scales
+
+The Couchbase web console makes it so simple to interact with your documents that some of the architectural differences between Couchbase and other databases may not be apparent.
+
+==== Auto-sharding
+
+You may have noticed when you were retrieving, modifying, and storing documents you did not have to specify any kind of shard key or describe to the system what the topology of active locations and replica locations of data needed to be.  
+
+Couchbase uses different approaches to distributing data based on what is appropriate for the particular service.  For you, from an application developer perspective, nearly all of those details are handled by the system.  In particular, when you retrived *route_10000* or *airline_137* Couchbase, as a distributed system, would automatically determine which of your nodes in the cluster was responsible for that document and interact directly with that node.
+
+In other NoSQL  systems, you may need to tell the system how to shard the data by a given attribute of a document. This is similar to how traditional RDBMs systems are used with sharding too.  In effect, your application needs to adapt to and become aware of what is happening with the underlying sharding of data.  This approach can also lead to hot-spots and require very specific management of what to do with the system to keep it scaling.
+
+In yet other NoSQL systems, you may not need to define what you shard data by, but rather the system may need to proxy requests internally or even accomplish quorum reads in order to retrieve data.  Each one of these additional hops and additional processing is overhead that slows down your application requests.
+
+For Couchabse, when interacting with the KV service for core document operations, auto-sharding is done with a hash based algorithm that automatically keeps data balanced across the cluster.  When adding more nodes, the system can dynamically on-line move only the subset of data needed to rebalance the cluster to the new nodes.  When removing nodes, the same is true.  More details on the architecture behind buckets and autosharding is covered in the Couchbase Server documentation section on xref:learn:buckets-memory-and-storage/vbuckets.adoc#understanding-vbuckets[understanding vbuckets].
+
+However, not all data should be hash partitioned.  Frequently data access patterns require accessing data by range.  Couchbase handles that too as you can read about in the section on xref:++Querying with N1QL.adoc++[Querying JSON with SQL++].
+
+
+=== Summary
+
+In this lab, you have learned all the basics of interacting with
+documents and buckets of documents. You have create a document, edited a
+document, looked up documents by key, and deleted a document. With this
+core set of operations and a denormalized data model, you can accomplish
+some very powerful things.
+
+Please continue with
+link:Querying%20with%20N1QL.adoc[the next section to learn how to query
+documents with N1QL], or choose to look at other sections of the lab.

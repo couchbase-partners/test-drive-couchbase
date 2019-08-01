@@ -1,0 +1,29 @@
+== Introduction Next Steps
+
+=== Next Steps
+
+As previously mentioned, it's recommended that you do the Logging into
+Couchbase lab first, but then you may visit these in any order that
+suits your interests.  There are no prerequsites other than being able
+to access the cluster.
+
+
+* link:"Logging into Couchbase.md"[Logging into Couchbase]
+* link:"Key Value Document Storage.md"[Key Value
+Document Storage]
+* link:"Querying with N1QL.md"[Querying with N1QL]
+* link:"Full Text Search.md"[Full Text Search]
+
+=== After Completing the Test Drive
+
+If you’re ready, you can visit a cloud Marketplace to spin up your own
+Couchbase Enterprise cluster. If you’d like to do more research,
+please check out the https://developer.couchbase.com[Couchbase
+Developer portal]. If you’d like to try running Couchbase on your own
+system or cloud environment, you can
+https://www.couchbase.com/downloads[download Couchbase Server
+Enterprise or Couchbase Server Community] for free. It can run on
+Windows, Mac, and a variety of popular Linux distros.  Using the
+https://www.couchbase.com/products/cloud/kubernetes[Couchbase
+Autonomous Operator], you can deploy on your own Kubernetes or
+OpenShift environment.

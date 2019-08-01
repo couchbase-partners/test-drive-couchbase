@@ -1,7 +1,7 @@
-== Lab 2 - Key/Value Document Storage
+== Lab - Core Document Operations
 
-This is the second lab for the Couchbase Test Drive. You need to have
-completed link:1%20-%20Logging%20into%20Couchbase.md[Lab 1 - Logging
+Prior to this, you need to have
+completed link:Logging%20into%20Couchbase.md[Lab 1 - Logging
 into Couchbase] before starting this lab.
 
 === Objective
@@ -12,7 +12,7 @@ new documents, finding documents by key, making changes to documents,
 and deleting documents. At the end of this lab, you will understand how
 to do all those operations within the Couchbase Console.
 
-This lab will not be covering any clients or SDK usage.
+The following steps should take approximately 10 to 15 minutes.
 
 === Steps
 
@@ -150,6 +150,7 @@ interesting than a flat field:
 
 [source,javascript]
 ----
+//TODO: update this to something in the same context
 {
   "name": "Matthew",
   "shoeSize": 13,
@@ -179,15 +180,4 @@ I deleted the *airline_137* document, for instance, the *route_10000*
 document would still have an airlineid, and it would still have a value
 of *airline_137*.
 
-=== Summary
-
-In this lab, you have learned all the basics of interacting with
-documents and buckets of documents. You have create a document, edited a
-document, looked up documents by key, and deleted a document. With this
-core set of operations and a denormalized data model, you can accomplish
-some very powerful things.
-
-However, there are situations where key lookups aren’t the best approach
-to finding documents. Please continue with
-link:3%20-%20Querying%20with%20N1QL.md[lab 3 to learn how to query
-documents with N1QL].
+Next, learn a bit about how what you have seen above leads to xref:++Document Operations - Perform at Scale.adoc++[performing at scale and what your next steps] are.
