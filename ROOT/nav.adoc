@@ -7,7 +7,7 @@
 
 .Overview of Couchbase
 * xref:"Logging in to Couchbase.adoc"[Logging in and Overview of Web Console]
-* xref:++Document Operations - Perform at Scale.adoc++[Choosing next Steps]
+* xref:++Introduction Next Steps.adoc++[Choosing next Steps]
 
 .Couchbase Core Document Operations
 // takes 10 minutes
