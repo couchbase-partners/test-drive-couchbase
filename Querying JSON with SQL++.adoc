@@ -4,7 +4,7 @@ You need to have completed
 link:Logging%20into%20Couchbase.md[Logging into
 Couchbase] before starting this lab.
 
-This should take approximately 20 minutes to complete.
+The lab here should take approximately 20 minutes to complete.
 
 === Objective
 
