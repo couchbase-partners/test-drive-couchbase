@@ -1,9 +1,11 @@
-== Lab 4 - Full Text Search
+== Lab - Full Text Search
 
-This is the fourth lab for the Couchbase Test Drive. This is the second
-lab for the Couchbase Test Drive. You need to have completed
-link:1%20-%20Logging%20into%20Couchbase.md[Lab 1 - Logging into
+You need to have completed
+link:Logging%20into%20Couchbase.md[Logging into
 Couchbase] before starting this lab.
+
+The lab here should take approximately 12 minutes to complete.
+
 
 === Objective
 
