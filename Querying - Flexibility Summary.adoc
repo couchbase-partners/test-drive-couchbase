@@ -1,0 +1,44 @@
+== Lab - Querying - Flexibility Summary
+
+=== How this is Flexible
+
+As you have seen, working with Couchbase N1QL is familiar if you have used SQL before, so you do not need to learn an entirely new, possibly platform specific language to query against your documents.
+
+There is another level of flexibility in this approach.  As you may have noticed, your app can also add documents with different schema or extend the schema as required.  N1QL is flexible with JSON documents and has specific handling for flattening, nesting, handling null versus missing and so forth.
+
+==== Query Integration
+
+N1QL queries are, of course, not only used from the Couchbase Console.  When developing an app using one of the Couchbase SDKs, the responses can be processed in flexible and performant methods on those platforms.  For instance, streaming parsers built-in will give you callbacks in Node.JS and give you a reactive stream or a Project Reactor Flux on Java.
+
+Beyond that, other services on Couchbase work with N1QL.  The Couchbase Analytics service uses N1QL for Analytics built on a SQL++ implementation.  The same flexibility of query also gives you an advantage when running a query over a very large dataset to gain insights from the data.
+
+It even extends outside Couchbase.  Spring Platform includes link:https://spring.io/projects/spring-data-couchbase[Spring Data Couchbase], which allows for a Spring repository based method of querying Couchbase.  For Node.js developers there is also a highlevel framework in the form of an Object Document Mapper in the link:http://ottomanjs.com/[Ottoman.js] project.
+
+There are other SQL related integrations and Big Data reltaed integrations that build upon N1QL.
+
+
+=== Summary
+
+In this lab, you have learned the basics of querying documents with
+N1QL. You have learned how to use the Query Workbench, SELECT documents,
+modify documents with N1QL, and some unique features of N1QL to deal
+with JSON. With N1QL, you can query denormalized JSON documents while
+being productive very quickly with a familiar SQL syntax.
+
+There is a lot more to learn about N1QL, even for SQL experts. Check out
+the
+https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/index.html[N1QL
+documentation for a full language reference], and if you have tricky
+N1QL questions, the https://forums.couchbase.com/c/n1ql[Couchbase N1QL
+forums] can help you find the answers.
+
+N1QL is a great tool for finding documents that meet strict criteria. It
+is not necessarily the best tool for a generalized search. For that,
+please check out link:4%20-%20Full%20Text%20Search.md[lab 4 to learn how
+find documents with a full text search]
+
+_Important note: If you can use a key/value operation, you should: it
+will be faster than running a query. However, key/value operations are
+sometimes not feasible for certain data access patterns, and that’s
+where N1QL can help._
+

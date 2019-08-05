@@ -1,14 +1,15 @@
-== Lab 3 - Querying with N1QL
+== Lab - Querying with N1QL
 
-This is the third lab for the Couchbase Test Drive. This is the second
-lab for the Couchbase Test Drive. You need to have completed
-link:1%20-%20Logging%20into%20Couchbase.md[Lab 1 - Logging into
+You need to have completed
+link:Logging%20into%20Couchbase.md[Logging into
 Couchbase] before starting this lab.
+
+This should take approximately 20 minutes to complete.
 
 === Objective
 
 This lab is designed to get you familiar with the N1QL (Non
-1st-Normal-Form Query Language). N1QL is a flavor of SQL that is
+1st-Normal-Form Query Language). N1QL is a general implementation of SQL++ that is
 designed to work with JSON data. If you’ve used any flavor of SQL in the
 past, you should be right at home. You will learn about Query Workbench,
 writing SELECT queries, basic JOINs, and data manipulate queries. At the
@@ -19,9 +20,7 @@ surface. You are invited to check out the
 https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/index.html[extensive
 N1QL documentation] or the
 http://query.pub.couchbase.com/tutorial/#1[interactive N1QL tutorial],
-once you have a a handle for the basics.
-
-This lab will not be covering any clients or SDK usage.
+once you have a handle for the basics.
 
 === Steps
 
@@ -239,6 +238,7 @@ Try this for yourself in Query Workbench.
 Assuming you still have the ``lab3document'' from above, here’s an
 example of `+UPDATE+` in action:
 
+// TODO: update this to be in the travel sample context
 [source,sql]
 ----
 UPDATE `travel-sample`
@@ -298,27 +298,7 @@ language has added a lot of statements, functions, and operators to
 query different shapes of data. Because of this, N1QL is considered a
 ``superset'' of SQL.
 
-=== Summary
+=== Conclusion
 
-In this lab, you have learned the basics of querying documents with
-N1QL. You have learned how to use the Query Workbench, SELECT documents,
-modify documents with N1QL, and some unique features of N1QL to deal
-with JSON. With N1QL, you can query denormalized JSON documents while
-being productive very quickly with a familiar SQL syntax.
+To conclude, have a look at a xref:++Querying - Flexibility Summary.adoc++[summary of the flexibility] you have seen above and learn a bit about how N1QL integrates into a wider ecosystem.
 
-There is a lot more to learn about N1QL, even for SQL experts. Check out
-the
-https://developer.couchbase.com/documentation/server/current/n1ql/n1ql-language-reference/index.html[N1QL
-documentation for a full language reference], and if you have tricky
-N1QL questions, the https://forums.couchbase.com/c/n1ql[Couchbase N1QL
-forums] can help you find the answers.
-
-N1QL is a great tool for finding documents that meet strict criteria. It
-is not necessarily the best tool for a generalized search. For that,
-please check out link:4%20-%20Full%20Text%20Search.md[lab 4 to learn how
-find documents with a full text search]
-
-_Important note: If you can use a key/value operation, you should: it
-will be faster than running a query. However, key/value operations are
-sometimes not feasible for certain data access patterns, and that’s
-where N1QL can help._
