@@ -23,7 +23,7 @@ another container??
 
 .Querying JSON with SQL++
 * xref:"Querying JSON with SQL++.adoc"[Querying Couchbase with ?N1QL?]
-* xref:TODO.adoc[Indexing Architecture and Performance]
+//* xref:TODO.adoc[Indexing Architecture and Performance]
 //* xref:TODO.adoc[Querying Couchbase Analytics]
 * xref:++Querying - Flexibility Summary.adoc++[Flexibility of Couchbase with Query]
 // will summarize what one should have taken away
