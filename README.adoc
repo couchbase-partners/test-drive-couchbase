@@ -3,27 +3,32 @@
 === Introduction
 
 The objective of this Test Drive is to familiarize you with the basics
-of Couchbase. You will go through four exercises using this test drive:
+of Couchbase Server in this test drive. We will also touch on
+Couchbase Sync Gateway, which can extend Couchbase to the edge-- all
+the way to mobile devices.  You will go through four exercises using
+this test drive:
 
 [arabic]
 . Couchbase Overview
-* You will log into the Couchbase Console (the web-based UI that comes
+* You will log into the Couchbase https://docs.couchbase.com/server/current/manage/management-tools.html#introduction-to-couchbase-web-console[Web Console] (the web-based UI that comes
 with Couchbase Server)
 * Next, you will load the ``travel-sample'' bucket, a predefined data
 set that’s great for experimentation.
-* Finally, you will log into the Sync Gateway console briefly.
+* Finally, you will log into the https://docs.couchbase.com/sync-gateway/current/introduction.html[Sync Gateway] console briefly.
 . Couchbase Core Document Operations
 * You will use the Couchbase Console to add documents to a bucket.
 * Next, you will locate documents using the key
 * After that, you will learn how to edit documents.
 * Finally, you will see how to delete a document.
 . Querying JSON with SQL++
+* You will read a bit about https://docs.couchbase.com/server/current/getting-started/try-a-query.html[N1QL Query]
 * You will use the Couchbase Console to view indexes on the
 ``travel-sample'' bucket.
 * Next, you will execute SELECT queries in the Query Workbench.
 * Finally, you will see how to use data modification queries like
 INSERT, UPDATE, and DELETE.
 . Deep Searching for your Documents
+* You will read a bit about https://docs.couchbase.com/server/current/fts/full-text-intro.html[Full Text Search]
 * You will use the Couchbase Console to create a full text search index
 * After creating the index, you will execute the FTS using search terms
 
