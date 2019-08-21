@@ -2,34 +2,34 @@
 * xref:README.adoc[Introduction]
 
 .Cloud Launch
-* xref:"Starting the Azure Test Drive.adoc"[Starting the Azure Test Drive]
-* xref:"Starting the GCP Test Drive.adoc"[Starting the Google Cloud Platform Test Drive]
+* xref:Starting{sp}the{sp}Azure{sp}Test{sp}Drive.adoc[Starting the Azure Test Drive]
+* xref:Starting{sp}the{sp}GCP{sp}Test{sp}Drive.adoc[Starting the Google Cloud Platform Test Drive]
 
 .Overview of Couchbase
-* xref:"Logging in to Couchbase.adoc"[Logging in and Overview of Web Console]
-* xref:++Introduction Next Steps.adoc++[Choosing next Steps]
+* xref:Logging{sp}into{sp}Couchbase.adoc[Logging in and Overview of Web Console]
+* xref:Introduction{sp}Next{sp}Steps.adoc[Choosing next Steps]
 
 .Couchbase Core Document Operations
 // takes 10 minutes
-* xref:"Key Value Document Storage.adoc"[Working in JSON Documents]
+* xref:Key{sp}Value{sp}Document{sp}Storage.adoc[Working in JSON Documents]
 // will cover flexibiiltiy agility of data model
-* xref:++Document Operations - Perform at Scale.adoc++[Perform at Scale]
+* xref:Document{sp}Operations{sp}-{sp}Perform{sp}at{sp}Scale.adoc[Perform at Scale]
 // covers how couchbase scales
 // FUTURE have the user run a workload generator from // FUTURE
 // if you have 20 minutes more -- opporty to bo
-another container??
+
 //* xref:TODO.adoc[Building an Application with Couchbase]
 // mainly links to other parts of the documentation site, intros a bit what the experience is like
 
 .Querying JSON with SQL++
-* xref:"Querying JSON with SQL++.adoc"[Querying Couchbase with ?N1QL?]
+* xref:Querying{sp}JSON{sp}with{sp}SQL++.adoc[Querying Couchbase with ?N1QL?]
 //* xref:TODO.adoc[Indexing Architecture and Performance]
 //* xref:TODO.adoc[Querying Couchbase Analytics]
-* xref:++Querying - Flexibility Summary.adoc++[Flexibility of Couchbase with Query]
+* xref:Querying{sp}-{sp}Flexibility{sp}Summary.adoc[Flexibility of Couchbase with Query]
 // will summarize what one should have taken away
 
 .Deep Searching for your Documents
-* xref:"Full Text Search.adoc"[Searching Couchbase]
+* xref:Full{sp}Text{sp}Search.adoc[Searching Couchbase]
 * xref:TODO.adoc[Flexibility of Couchbase with Search]
 // will summarize what one should have taken away
 
