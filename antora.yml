@@ -1,0 +1,5 @@
+name: cloud-test-drive
+title: Couchbase Cloud Test Drive
+version: master
+nav:
+- modules/ROOT/nav.adoc
