@@ -26,7 +26,7 @@ once you have a handle for the basics.
 
 ==== Query Workbench
 
-From the Couchbase Console, click ``Query''. You will taken to an
+From the Couchbase Console, click ``Query''. You will be taken to an
 interactive page that allows you to enter a N1QL query, execute it, and
 see the results. Try a very simple query like `+SELECT 1;+`. You can
 type it in, end with a semicolon, and press ``enter'', or you can just
@@ -39,14 +39,15 @@ a name of `+$1+`, since you didn’t specify a name), and a value of 1.
 image:/images/3/0301-first-n1ql.png[First N1QL query]
 
 Before doing anything more advanced, you must first understand the
-basics of indexing. In relational databases, you often don’t need to
-create indexes on small tables, because a table scan is often fast
-enough for small amounts of data. So, indexes aren’t required.
+basics of indexing. Indexes are the key to performance in a database.
+In a traditional RDBMS, all queries that cannot be satisfied by
+relevant index fail back to a full scan of the data.  In Couchbase,
+this is optional and often not the approach you would use.
 
 In a huge collection of documents, you must create an index on the
 fields you want to query, otherwise the queries will not execute.
 
-In Couchbase Server, You can optionally create an index on a buckeet
+In Couchbase Server, You can optionally create an index on a bucket
 that is roughly equivalent to a table scan:
 `+CREATE PRIMARY INDEX def_primary on bucketname+`. Fortunately, this
 index has already been created on the ``travel-sample'' bucket
@@ -55,10 +56,8 @@ tab in the Couchbase Console to see what indexes exist.
 
 image:/images/3/0302-indexes.png[Indexes]
 
-An index called `+def_primary+` already exists on travel-sample.
-
 There are several other indexes on this bucket as well. For instance, if
-you example the `+def_type+` index, you’ll see that the `+type+` field
+you examine the `+def_type+` index, you’ll see that the `+type+` field
 is being indexed.
 
 image:/images/3/0303-def-type-index.png[Index on type field]
