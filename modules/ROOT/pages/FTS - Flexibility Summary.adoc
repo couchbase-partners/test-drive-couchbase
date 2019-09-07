@@ -1,0 +1,21 @@
+== Lab - FTS - Flexibility Summary
+
+=== How this is Flexible
+
+As you have seen, working with Couchbase FTS can be powerful if you have situations where you want to search in an unstructured, natural language way.
+For example, when you want to retrieve documents based on a user searching for "beauty", you likely also want to consider "beautiful" and "beauties" to be relevant.
+Then you will probably want to take this a step further and tune the scoring of results, to serve up the most relevant data.
+
+==== Search Integration
+
+Searches are, of course, not only available from the REST interface and the Web UI.
+Searches can be added to exising Couchbase Applications as needed using one of the Couchbase SDKs.
+It is also possible to combine N1QL and Search.
+This gives one the ability to use natural language to find candidate documents, but still process and aggregate them using N1QL statements.
+
+=== Summary
+
+In this lab, you have learned the basics of using Couchbase Server's built in Full Text Search (FTS).
+You have learned how to create an index, limit the scope of the index, and execute a search.
+
+For a complete reference to all the search options, check out the [FTS reference](https://developer.couchbase.com/documentation/server/current/fts/full-text-intro.html) and the [bleve documentation](http://www.blevesearch.com/docs/Query-String-Query/).
