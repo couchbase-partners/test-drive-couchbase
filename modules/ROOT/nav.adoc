@@ -1,5 +1,5 @@
 .Introduction
-* xref:README.adoc[Introductin]
+* xref:README.adoc[Introduction]
 
 .Cloud Launch
 * xref:Starting{sp}the{sp}Azure{sp}Test{sp}Drive.adoc[Starting the Azure Test Drive]
@@ -22,7 +22,7 @@
 // mainly links to other parts of the documentation site, intros a bit what the experience is like
 
 .Querying JSON with SQL++
-* xref:Querying{sp}JSON{sp}with{sp}SQL++.adoc[Querying Couchbase with ?N1QL?]
+* xref:Querying{sp}JSON{sp}with{sp}SQL++.adoc[Querying Couchbase with SQL++]
 //* xref:TODO.adoc[Indexing Architecture and Performance]
 //* xref:TODO.adoc[Querying Couchbase Analytics]
 * xref:Querying{sp}-{sp}Flexibility{sp}Summary.adoc[Flexibility of Couchbase with Query]
