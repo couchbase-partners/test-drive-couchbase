@@ -1,6 +1,6 @@
-== Couchbase Test Drive Manual
+= Couchbase Test Drive Manual
 
-=== Introduction
+== Introduction
 
 The objective of this Test Drive is to familiarize you with the basics
 of Couchbase Server in this test drive. We will also touch on
@@ -32,7 +32,7 @@ INSERT, UPDATE, and DELETE.
 * You will use the Couchbase Console to create a full text search index
 * After creating the index, you will execute the FTS using search terms
 
-=== Prerequisites
+== Prerequisites
 
 The only prerequisite is a web browser.
 
@@ -43,7 +43,7 @@ Note that Sync Gateway is only briefly touched on in this test drive.
 For more information on using Sync Gateway and the entire Couchbase
 Mobile solution, please look at the https://docs.couchbase.com[documentation].
 
-=== Guide to using this test drive
+== Guide to using this test drive
 
 The first lab needs to be done first. After that, you can elect to work
 on any of the remaining labs in any order.
@@ -51,7 +51,7 @@ on any of the remaining labs in any order.
 Code snippets and fields in JSON document will appear as a monospaced
 font, like this: SELECT t.* FROM `travel-sample` t
 
-=== What you will learn from this Test Drive
+== What you will learn from this Test Drive
 
 You will learn the basics of using Couchbase Server in this test drive.
 
@@ -70,12 +70,12 @@ In addition, you will also be taking a brief look at Sync
 Gateway, which is part of the
 https://www.couchbase.com/products/mobile[Couchbase Mobile platform].
 
-=== Test Drive Support
+== Test Drive Support
 
 If you have any questions or problems with this test drive, please
 ask about on the http://forums.couchbase.com/[forums].
 
-=== Labs
+== Labs
 
 These labs may be used on any cluster of Couchbase, though you probably
 have arrived here by starting a cluster on Azure or GCP.
@@ -97,7 +97,7 @@ Document Storage]
 * xref:Querying{sp}with{sp}N1QL.adoc[Querying with N1QL]
 * xref:Full{sp}Text{sp}Search.adoc[Full Text Search]
 
-=== Key Takeaways/Summary
+== Key Takeaways/Summary
 
 *Couchbase Overview*: Logging into a cluster. The Couchbase Console makes
 it easy to view your cluster and perform both dev and ops tasks.

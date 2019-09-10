@@ -1,6 +1,6 @@
-== Introduction Next Steps
+= Introduction Next Steps
 
-=== Next Steps
+== Next Steps
 
 As previously mentioned, it's recommended that you do the Logging into
 Couchbase lab first, but then you may visit these in any order that
@@ -14,7 +14,7 @@ Document Storage]
 * link:"Querying with N1QL.md"[Querying with N1QL]
 * link:"Full Text Search.md"[Full Text Search]
 
-=== After Completing the Test Drive
+== After Completing the Test Drive
 
 If you’re ready, you can visit a cloud Marketplace to spin up your own
 Couchbase Enterprise cluster. If you’d like to do more research,

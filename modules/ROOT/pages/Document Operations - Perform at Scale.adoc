@@ -1,10 +1,10 @@
-== Lab - Core Document Operations - Perform at Scale
+= Lab - Core Document Operations - Perform at Scale
 
-=== How this Scales
+== How this Scales
 
 The Couchbase web console makes it so simple to interact with your documents that some of the architectural differences between Couchbase and other databases may not be apparent.
 
-==== Auto-sharding
+=== Auto-sharding
 
 You may have noticed when you were retrieving, modifying, and storing documents you did not have to specify any kind of shard key or describe to the system what the topology of active locations and replica locations of data needed to be.  
 
@@ -19,7 +19,7 @@ For Couchabse, when interacting with the KV service for core document operations
 However, not all data should be hash partitioned.  Frequently data access patterns require accessing data by range.  Couchbase handles that too as you can read about in the section on xref:++Querying with N1QL.adoc++[Querying JSON with SQL++].
 
 
-=== Summary
+== Summary
 
 In this lab, you have learned all the basics of interacting with
 documents and buckets of documents. You have create a document, edited a

@@ -1,10 +1,10 @@
-== Lab - Core Document Operations
+= Lab - Core Document Operations
 
 Prior to this, you need to have
 completed link:Logging%20into%20Couchbase.md[Lab 1 - Logging
 into Couchbase] before starting this lab.
 
-=== Objective
+== Objective
 
 This lab is designed to get you familiar with Couchbase Server. You will
 learn about buckets, keys and JSON documents work. You will be creating
@@ -14,9 +14,9 @@ to do all those operations within the Couchbase Console.
 
 The following steps should take approximately 10 to 15 minutes.
 
-=== Steps
+== Steps
 
-==== Introduction to documents
+=== Introduction to documents
 
 The fundamental unit of data in Couchbase Server (or any document
 database) is the document.
@@ -64,7 +64,7 @@ is not part of JSON object, but it is ``metadata''. A document key can
 be any value you want it to be. This document has a key of
 *route_10000*, for instance.
 
-==== What is a bucket?
+=== What is a bucket?
 
 In Couchbase Server, documents are stored in named *buckets*. Within a
 bucket, each document must have a unique key. Beyond that, there is no
@@ -85,7 +85,7 @@ fields like `+type+` are not required, ``type'' not a reserved word, and
 the field is not treated any differently in Couchbase than the other
 fields.
 
-==== Create a new document
+=== Create a new document
 
 From the Couchbase Console, click ``Data Buckets''.
 
@@ -127,7 +127,7 @@ message will appear on the screen. Once you’re done, click the
 ``Documents'' link to go back to the list of documents. Feel free to
 experiment and create additional document if you’d like.
 
-==== Finding a document by key
+=== Finding a document by key
 
 This bucket has a large amount of documents. You can go right to a
 specific document by using its key. Enter the key *route_10000* and
@@ -142,7 +142,7 @@ name of the airline from looking at just this document, but note that
 the `+airlineid+` has a value of *airline_137*. To find out the name of
 the airline, look up that document by key.
 
-==== Make changes to a document
+=== Make changes to a document
 
 Lookup the document you created earlier (by key *lab2document*). Let’s
 make a change to this document. Let’s add something a little more
@@ -169,7 +169,7 @@ other documents in this database. It’s possible that some documents have
 Couchbase suitable to agile development and to situations where you need
 to ingest data from multiple sources that have changing data structures.
 
-==== Delete a document
+=== Delete a document
 
 Finally, you can delete a document. Just click the ``Delete'' button
 from the document list page, or from the individual document editing

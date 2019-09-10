@@ -1,4 +1,4 @@
-== Lab - Querying with N1QL
+= Lab - Querying with N1QL
 
 You need to have completed
 link:Logging%20into%20Couchbase.md[Logging into
@@ -6,7 +6,7 @@ Couchbase] before starting this lab.
 
 The lab here should take approximately 20 minutes to complete.
 
-=== Objective
+== Objective
 
 This lab is designed to get you familiar with the N1QL (Non
 1st-Normal-Form Query Language). N1QL is a general implementation of SQL++ that is
@@ -22,9 +22,9 @@ N1QL documentation] or the
 http://query.pub.couchbase.com/tutorial/#1[interactive N1QL tutorial],
 once you have a handle for the basics.
 
-=== Steps
+== Steps
 
-==== Query Workbench
+=== Query Workbench
 
 From the Couchbase Console, click ``Query''. You will be taken to an
 interactive page that allows you to enter a N1QL query, execute it, and
@@ -97,7 +97,7 @@ indexes. Here are some commands you will need:
 When you’re done, make sure both `+def_type+` and `+def_primary+`
 indexes exist in their initial state.
 
-==== JOIN
+=== JOIN
 
 One feature that is somewhat unique to Couchbase Server is the ability
 to `+JOIN+` documents together in a query. Currently, a value can be
@@ -176,7 +176,7 @@ The `+airlineid+`, `+destinationairport+`, and `+sourceairport+` fields
 all come from the route document. But the `+name+` field comes from the
 airline document.
 
-==== INSERT
+=== INSERT
 
 With N1QL, you also get the ability to run INSERT, UPDATE, and DELETE
 queries (and more, like
@@ -231,7 +231,7 @@ that was generated. Here are the results of the above `+INSERT+` query:
 
 Try this for yourself in Query Workbench.
 
-==== UPDATE
+=== UPDATE
 
 `+UPDATE+` in N1QL is used to make changes to an existing document.
 Assuming you still have the ``lab3document'' from above, here’s an
@@ -251,7 +251,7 @@ of `+shoeSize+`, which previously didn’t exist in the document.
 
 `+RETURNING+` can also be used with an `+UPDATE+`.
 
-==== DELETE
+=== DELETE
 
 Finally, let’s get rid of this ``lab3document'' with a `+DELETE+` query.
 
@@ -265,7 +265,7 @@ This will delete the document with the matching key. If you use a
 `+RETURNING+` with a `+DELETE+`, it will return the document that you
 deleted.
 
-==== META and other JSON tidbits
+=== META and other JSON tidbits
 
 `+META+` has been mentioned a few times already, and `+UUID+` was also
 mentioned. These are
@@ -297,7 +297,7 @@ language has added a lot of statements, functions, and operators to
 query different shapes of data. Because of this, N1QL is considered a
 ``superset'' of SQL.
 
-=== Conclusion
+== Conclusion
 
 To conclude, have a look at a xref:++Querying - Flexibility Summary.adoc++[summary of the flexibility] you have seen above and learn a bit about how N1QL integrates into a wider ecosystem.
 

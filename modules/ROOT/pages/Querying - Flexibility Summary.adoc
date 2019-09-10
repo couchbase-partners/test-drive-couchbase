@@ -1,12 +1,12 @@
-== Lab - Querying - Flexibility Summary
+= Lab - Querying - Flexibility Summary
 
-=== How this is Flexible
+== How this is Flexible
 
 As you have seen, working with Couchbase N1QL is familiar if you have used SQL before, so you do not need to learn an entirely new, possibly platform specific language to query against your documents.
 
 There is another level of flexibility in this approach.  As you may have noticed, your app can also add documents with different schema or extend the schema as required.  N1QL is flexible with JSON documents and has specific handling for flattening, nesting, handling null versus missing and so forth.
 
-==== Query Integration
+=== Query Integration
 
 N1QL queries are, of course, not only used from the Couchbase Console.  When developing an app using one of the Couchbase SDKs, the responses can be processed in flexible and performant methods on those platforms.  For instance, streaming parsers built-in will give you callbacks in Node.JS and give you a reactive stream or a Project Reactor Flux on Java.
 
@@ -17,7 +17,7 @@ It even extends outside Couchbase.  Spring Platform includes link:https://spring
 There are other SQL related integrations and Big Data reltaed integrations that build upon N1QL.
 
 
-=== Summary
+== Summary
 
 In this lab, you have learned the basics of querying documents with
 N1QL. You have learned how to use the Query Workbench, SELECT documents,

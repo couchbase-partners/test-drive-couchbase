@@ -1,9 +1,9 @@
-== Lab 1 - Logging into Couchbase
+= Lab 1 - Logging into Couchbase
 
 During this lab you’ll login to Couchbase for the first time. You need
 to complete this lab before starting any of the other labs.
 
-=== Objective
+== Objective
 
 This lab is designed to get you started with Couchbase Server. You’ll
 login to the Couchbase Console. In the console, you will load up a
@@ -12,9 +12,9 @@ bucket of sample data. Finally, you will view the Sync Gateway console.
 This lab will not be covering any clients or SDK usage. You will not do
 anything with the Sync Gateway console in later labs (yet).
 
-=== Steps
+== Steps
 
-==== Login to the Couchbase Console
+=== Login to the Couchbase Console
 
 Start by going to the Server Admin URL. You will be prompted with a
 login form. Enter the credentials you received in the last step. Click
@@ -41,7 +41,7 @@ called ``sync_gateway''. Later, you’ll be creating another bucket.
 tab that takes you to the Query Workbench. More on this in
 link:3%20-%20Querying%20with%20N1QL.md[Lab 3 - Querying with N1QL].
 
-==== Load ``travel-sample'' data
+=== Load ``travel-sample'' data
 
 In the Couchbase Console, click the ``Settings'' tab.
 
@@ -72,7 +72,7 @@ bucket (look in the `item count' column).
 image:/images/1/0108-bucket-complete.png[Travel sample completely
 loaded]
 
-==== Sync Gateway
+=== Sync Gateway
 
 Sync Gateway is separate from Couchbase Server, but it allows Couchbase
 Lite databases (on mobile devices) to sync with each other and with
@@ -88,7 +88,7 @@ If you are interested in learning more about Sync Gateway, check out the
 http://docs.couchbase.com/sync-gateway/[Sync Gateway documentation] and
 http://developer.couchbase.com/mobile/[Sync Gateway samples].
 
-=== Summary
+== Summary
 
 You are now ready to begin labs 2, 3, and 4. The next lab is about
 link:2%20-%20Key%20Value%20Document%20Storage.md[Key Value Document

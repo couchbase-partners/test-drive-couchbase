@@ -1,4 +1,4 @@
-== Lab - Full Text Search
+= Lab - Full Text Search
 
 You need to have completed
 link:Logging%20into%20Couchbase.md[Logging into
@@ -7,7 +7,7 @@ Couchbase] before starting this lab.
 The lab here should take approximately 12 minutes to complete.
 
 
-=== Objective
+== Objective
 
 This lab is designed to introduce you to the Full Text Search (FTS)
 capabilities built into Couchbase. With many databases, FTS capabilities
@@ -28,9 +28,9 @@ FTS documentation] once you have a a handle for the basics.
 
 This lab will not be covering any clients or SDK usage.
 
-=== Steps
+== Steps
 
-==== Search feature
+=== Search feature
 
 In the ``travel-sample'' bucket, there are a number of ``landmark''
 documents. These landmarks documents contain information about places,
@@ -64,7 +64,7 @@ instead? These type of ``language aware'' queries that return results
 with relevancy scores are difficult to do with the more exacting nature
 of N1QL(3queryingwithn1ql.md).
 
-==== Building an index
+=== Building an index
 
 Let’s build a index to help our users find interesting results. But
 let’s keep it very simple for this example.
@@ -117,7 +117,7 @@ the indexing should be done quickly. Further changes/additions to
 documents will be automatically indexed on an incremental basis (or you
 can manually update if you choose).
 
-==== Executing a search
+=== Executing a search
 
 Now that we have a search index, let’s try out some searches. Click
 ``Full Text'' to back to the list of FTS indexes. Click the
@@ -156,7 +156,7 @@ you checked the ``store'' option. If you didn’t check that option, you
 wouldn’t get a the snippet and highlight: you would just get the
 document key and a score.
 
-=== Summary
+== Summary
 
 In this lab, you have learned the basics of using Couchbase Server’s
 built in Full Text Search (FTS). You have learned how to create an
