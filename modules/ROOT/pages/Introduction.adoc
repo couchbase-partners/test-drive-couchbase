@@ -75,7 +75,7 @@ https://www.couchbase.com/products/mobile[Couchbase Mobile platform].
 If you have any questions or problems with this test drive, please
 ask about on the http://forums.couchbase.com/[forums].
 
-== Labs
+== Labs in this Test Drive
 
 These labs may be used on any cluster of Couchbase, though you probably
 have arrived here by starting a cluster on Azure or GCP.
