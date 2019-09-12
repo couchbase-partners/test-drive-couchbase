@@ -1,5 +1,5 @@
 .Introduction
-* xref:README.adoc[Introduction]
+* xref:Introduction.adoc[Introduction]
 
 .Cloud Launch
 * xref:Starting{sp}the{sp}Azure{sp}Test{sp}Drive.adoc[Starting the Azure Test Drive]
