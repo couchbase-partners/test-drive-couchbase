@@ -71,7 +71,7 @@ let’s keep it very simple for this example.
 
 From the Couchbase Console, go to ``Indexes'' then click ``Full Text''.
 
-image:/images/4/0401-indexes-full-text.png[Full Text Search indexes]
+image::/images/4/0401-indexes-full-text.png[Full Text Search indexes]
 
 Click the ``New Full Text Index'' button to create a new FTS index. I’ll
 name the index ``travel-sample-idx''. Next, I’ll choose the
@@ -93,7 +93,7 @@ leave it as ``type'', since that’s what ``travel-sample'' uses.
 
 Check the box ``only index specified field'' and click ``ok'' to save.
 
-image:/images/4/0402-create-index.png[Create index]
+image::/images/4/0402-create-index.png[Create index]
 
 Next, we need to add a ``child field'' to this index. Right now, we only
 want to index the `+content+` field of landmark documents. Hover over
@@ -106,7 +106,7 @@ After that, hover over the ``default'' record, click ``edit'' and
 uncheck the ``enabled'' option. We aren’t going to use the default
 index, so this will save time when creating the initial index.
 
-image:/images/4/0403-create-index.gif[Create index]
+image::/images/4/0403-create-index.gif[Create index]
 
 Finally, click the ``Create Index'' button. This will kick off the
 initial indexing process. You can watch the progress on the following
@@ -124,14 +124,14 @@ Now that we have a search index, let’s try out some searches. Click
 ``travel-sample-idx'' index and a ``search this index…'' text box will
 appear. Enter a search term like ``breakfast'' and click ``Search''.
 
-image:/images/4/0404-search-breakfast.png[Create index]
+image::/images/4/0404-search-breakfast.png[Create index]
 
 When searching for ``breakfast'', you should get 81 results. The most
 relevant results will appear at the top (just like a web search engine).
 You can check ``Show Scoring'' to see the actual score calculations if
 you’d like.
 
-image:/images/4/0405-search-results.png[Create index]
+image::/images/4/0405-search-results.png[Create index]
 
 Try search for ``breakfast'' and then ``bed and breakfast''. The former
 returns 81 results, the latter returns 85 results. Also notice that

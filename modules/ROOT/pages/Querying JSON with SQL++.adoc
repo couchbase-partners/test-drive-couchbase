@@ -36,7 +36,7 @@ full response to your request. It includes fields like `+success+` and
 documents. In this case, it’s only one document with one field (assigned
 a name of `+$1+`, since you didn’t specify a name), and a value of 1.
 
-image:/images/3/0301-first-n1ql.png[First N1QL query]
+image::/images/3/0301-first-n1ql.png[First N1QL query]
 
 Before doing anything more advanced, you must first understand the
 basics of indexing. Indexes are the key to performance in a database.
@@ -54,13 +54,13 @@ index has already been created on the ``travel-sample'' bucket
 automatically, along with several other indexes. Click the ``Indexes''
 tab in the Couchbase Console to see what indexes exist.
 
-image:/images/3/0302-indexes.png[Indexes]
+image::/images/3/0302-indexes.png[Indexes]
 
 There are several other indexes on this bucket as well. For instance, if
 you examine the `+def_type+` index, you’ll see that the `+type+` field
 is being indexed.
 
-image:/images/3/0303-def-type-index.png[Index on type field]
+image::/images/3/0303-def-type-index.png[Index on type field]
 
 Consider this query:
 

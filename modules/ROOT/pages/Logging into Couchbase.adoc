@@ -20,7 +20,7 @@ Start by going to the Server Admin URL. You will be prompted with a
 login form. Enter the credentials you received in the last step. Click
 ``Sign In''.
 
-image:/images/1/0105-login.png[Travel-sample bucket]
+image::/images/1/0105-login.png[Travel-sample bucket]
 
 Once you successfully login, you will see the Couchbase Enterprise
 Edition console. You will be looking at the ``Overview'' section
@@ -49,7 +49,7 @@ Once in Settings, click the ``Sample Buckets'' button. Under ``Available
 Samples'', find ``travel-sample'' and check the box. Click ``Create'' to
 start loading this sample bucket.
 
-image:/images/1/0106-travel-sample.png[Travel-sample bucket]
+image::/images/1/0106-travel-sample.png[Travel-sample bucket]
 
 The ``travel-sample'' is a set of sample documents that will be loaded
 into a new bucket called ``travel-sample''. It contains five different
@@ -58,7 +58,7 @@ This sample data is meant to help you explore the features and
 functionality of Couchbase Server. You will use this bucket in the later
 test drive labs.
 
-image:/images/1/0107-loading-travel-sample.png[Loading travel-sample
+image::/images/1/0107-loading-travel-sample.png[Loading travel-sample
 bucket]
 
 The bucket will take a minute or so to completely load. Click on ``Data
@@ -69,7 +69,7 @@ be on the list too.
 When complete, there should be 31,591 documents in the ``travel-sample''
 bucket (look in the `item count' column).
 
-image:/images/1/0108-bucket-complete.png[Travel sample completely
+image::/images/1/0108-bucket-complete.png[Travel sample completely
 loaded]
 
 === Sync Gateway
@@ -82,7 +82,7 @@ This lab does not include details on how to use Sync Gateway. You can
 visit the Sync Gateway Admin console via the URL that you saw in
 ``Access information'' earlier.
 
-image:/images/1/0109-sync-gateway.png[Sync Gateway]
+image::/images/1/0109-sync-gateway.png[Sync Gateway]
 
 If you are interested in learning more about Sync Gateway, check out the
 http://docs.couchbase.com/sync-gateway/[Sync Gateway documentation] and
