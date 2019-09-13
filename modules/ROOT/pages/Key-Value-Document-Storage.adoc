@@ -1,8 +1,7 @@
 = Lab - Core Document Operations
 
 Prior to this, you need to have
-completed link:Logging%20into%20Couchbase.md[Lab 1 - Logging
-into Couchbase] before starting this lab.
+completed link:Logging-into-Couchbase.adoc[Lab 1 - Logging into Couchbase] before starting this lab.
 
 == Objective
 

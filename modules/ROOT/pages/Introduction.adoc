@@ -83,19 +83,16 @@ have arrived here by starting a cluster on Azure or GCP.
 If you do not yet have a running cluster, instructions on creating a cluster
 with Test Drive are here:
 
-* xref:Starting{sp}the{sp}Azure{sp}Test{sp}Drive.adoc[Starting
-the Azure Test Drive]
-* xref:Starting{sp}the{sp}GCP{sp}Test{sp}Drive.adoc[Starting the
-GCP Test Drive]
+* xref:Starting-the-Azure-Test-Drive.adoc[Starting the Azure Test Drive]
+* xref:Starting-the-GCP-Test-Drive.adoc[Starting the GCP Test Drive]
 
 //TODO: update this with the final outline
 With a cluster all ready, here are the labs we’ll work through:
 
-* xref:Logging{sp}into{sp}Couchbase.adoc"[Logging into Couchbase]
-* xref:Key{sp}Value{sp}Document{sp}Storage.adoc"[Key Value
-Document Storage]
-* xref:Querying{sp}with{sp}N1QL.adoc[Querying with N1QL]
-* xref:Full{sp}Text{sp}Search.adoc[Full Text Search]
+* xref:Logging-into-Couchbase.adoc"[Logging into Couchbase]
+* xref:Key-Value-Document-Storage.adoc"[Key Value Document Storage]
+* xref:Querying-JSON-with-SQL++.adoc[Querying with N1QL]
+* xref:Full-Text-Search.adoc[Full Text Search]
 
 == Key Takeaways/Summary
 
@@ -114,4 +111,4 @@ SQL).
 is another way to locate document(s). You can leverage the many full
 text search options to help your users find the information they want.
 
-xref:Introduction{sp}Next{sp}Steps.adoc[Next Steps…]
+xref:Introduction-Next-Steps.adoc[Next Steps…]

@@ -39,7 +39,7 @@ cluster. To start with, the Test Drive has created a single bucket
 called ``sync_gateway''. Later, you’ll be creating another bucket.
 * *Query* - When you want to run N1QL queries, you can do so from this
 tab that takes you to the Query Workbench. More on this in
-link:3%20-%20Querying%20with%20N1QL.md[Lab 3 - Querying with N1QL].
+link:Querying-JSON-with-SQL++.adoc[Lab 3 - Querying with N1QL].
 
 === Load ``travel-sample'' data
 
@@ -91,9 +91,4 @@ http://developer.couchbase.com/mobile/[Sync Gateway samples].
 == Summary
 
 You are now ready to begin labs 2, 3, and 4. The next lab is about
-link:2%20-%20Key%20Value%20Document%20Storage.md[Key Value Document
-Storage], but you can complete the labs in any order you choose.
-
-For more information about Couchbase Server or Sync Gateway on Google
-Cloud Launcher, please contact partners@couchbase.com or
-sales@couchbase.com.
+link:Key-Value-Document-Storage.adoc[Key Value Document Storage], but you can complete the labs in any order you choose.

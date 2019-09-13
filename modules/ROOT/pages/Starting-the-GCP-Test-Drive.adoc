@@ -68,4 +68,4 @@ You may want to bookmark these URLs and make a note of the access
 information, since you will be using it throughout the remaining labs.
 
 Great! Now you’re all set to get started with
-link:++Logging in to Couchbase.md++[the overview].
+link:Logging-into-Couchbase.adoc[the overview].

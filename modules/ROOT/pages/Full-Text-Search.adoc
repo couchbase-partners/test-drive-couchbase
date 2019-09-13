@@ -1,8 +1,7 @@
 = Lab - Full Text Search
 
 You need to have completed
-link:Logging%20into%20Couchbase.md[Logging into
-Couchbase] before starting this lab.
+link:Logging-into-Couchbase.adoc[Logging into Couchbase] before starting this lab.
 
 The lab here should take approximately 12 minutes to complete.
 
@@ -62,7 +61,7 @@ results? What about ``bed and breakfast''? Maybe it should appear, but
 lower down the list in relevancy. What if your user types ``brakfast''
 instead? These type of ``language aware'' queries that return results
 with relevancy scores are difficult to do with the more exacting nature
-of N1QL(3queryingwithn1ql.md).
+of link:Querying-JSON-with-SQL++.adoc[N1QL].
 
 === Building an index
 
