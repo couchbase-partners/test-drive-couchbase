@@ -92,7 +92,7 @@ The ``travel-sample'' bucket should be listed (it was created in the
 first lab). Locate it on list of buckets and click the ``Documents''
 button.
 
-image::/images/2/0201-bucket-list.png[List of buckets in Couchbase
+image::2/0201-bucket-list.png[List of buckets in Couchbase
 Console]
 
 You should now see a list of documents. The ID column shows the key for
@@ -100,7 +100,7 @@ each document, and the Content column shows a partial excerpt of the
 JSON document. To create a new document, click the ``Create Document''
 button.
 
-image::/images/2/0202-document-list.png[List of documents in a bucket]
+image::2/0202-document-list.png[List of documents in a bucket]
 
 After clicking the ``Create Document'' button, you will be prompted for
 a document ID. It must be unique to that bucket. If I typed in
@@ -109,7 +109,7 @@ creative ID like ``lab2document''. A document with that key and some
 default JSON will be created, and you will be taken to a page where you
 can make changes to the JSON.
 
-image::/images/2/0203-edit-document.png[Edit document]
+image::2/0203-edit-document.png[Edit document]
 
 Enter the following JSON and then click the ``Save'' button.
 
@@ -132,7 +132,7 @@ This bucket has a large amount of documents. You can go right to a
 specific document by using its key. Enter the key *route_10000* and
 click the ``Lookup Id'' button.
 
-image::/images/2/0204-lookup-by-key.png[Lookup document by key]
+image::2/0204-lookup-by-key.png[Lookup document by key]
 
 You should be taken to the document that was shown at the very beginning
 of this lab. It’s an airline route from Ben Gurion Airport in Tel Aviv

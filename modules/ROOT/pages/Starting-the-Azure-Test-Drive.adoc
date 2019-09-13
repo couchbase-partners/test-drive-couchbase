@@ -8,17 +8,17 @@ First off, navigate to the
 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/couchbase.couchbase-enterprise[Couchbase
 Enterprise on Azure Marketplace]. Then click the `Test Drive' button.
 
-image::/images/0a/0101-start-test-drive.png[Start test drive]
+image::0a/0101-start-test-drive.png[Start test drive]
 
 You will be prompted for additional information, and you will be asked
 to agree to the terms of service. Click ``Done'' to proceed.
 
-image::/images/0a/0102-tos.png[Terms of service]
+image::0a/0102-tos.png[Terms of service]
 
 Next, Azure will start deploying the test drive. This should only take a
 few minutes.
 
-image::/images/0a/0103-deploying.gif[Deploying]
+image::0a/0103-deploying.gif[Deploying]
 
 What Azure is doing:
 * Deploying 3 ``nodes'' of Couchbase Server on 3 Azure VMs
@@ -35,7 +35,7 @@ what type of VMs to use, the credentials, and more.
 When the test drive is done deploying, you’ll see ``Access information''
 displayed.
 
-image::/images/0a/0104-access-information.png[Access information]
+image::0a/0104-access-information.png[Access information]
 
 This includes:
 
