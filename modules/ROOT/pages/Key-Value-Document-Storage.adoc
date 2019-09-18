@@ -1,7 +1,7 @@
 = Lab - Core Document Operations
 
 Prior to this, you need to have
-completed link:Logging-into-Couchbase.adoc[Lab 1 - Logging into Couchbase] before starting this lab.
+completed xref:Logging-into-Couchbase.adoc[Lab 1 - Logging into Couchbase] before starting this lab.
 
 == Objective
 
@@ -179,4 +179,4 @@ I deleted the *airline_137* document, for instance, the *route_10000*
 document would still have an airlineid, and it would still have a value
 of *airline_137*.
 
-Next, learn a bit about how what you have seen above leads to xref:++Document Operations - Perform at Scale.adoc++[performing at scale and what your next steps] are.
+Next, learn a bit about how what you have seen above leads to xref:Document-Operations-Perform-at-Scale.adoc[performing at scale and what your next steps] are.

@@ -6,7 +6,7 @@
 * xref:Starting-the-GCP-Test-Drive.adoc[Starting the Google Cloud Platform Test Drive]
 
 .Overview of Couchbase
-* xref:Logging-into-Couchbase.adocc[Logging in and Overview of Web Console]
+* xref:Logging-into-Couchbase.adoc[Logging in and Overview of Web Console]
 * xref:Introduction-Next-Steps.adoc[Choosing next Steps]
 
 .Couchbase Core Document Operations

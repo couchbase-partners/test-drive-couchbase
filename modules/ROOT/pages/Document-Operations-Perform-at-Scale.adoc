@@ -16,7 +16,7 @@ In yet other NoSQL systems, you may not need to define what you shard data by, b
 
 For Couchabse, when interacting with the KV service for core document operations, auto-sharding is done with a hash based algorithm that automatically keeps data balanced across the cluster.  When adding more nodes, the system can dynamically on-line move only the subset of data needed to rebalance the cluster to the new nodes.  When removing nodes, the same is true.  More details on the architecture behind buckets and autosharding is covered in the Couchbase Server documentation section on xref:learn:buckets-memory-and-storage/vbuckets.adoc#understanding-vbuckets[understanding vbuckets].
 
-However, not all data should be hash partitioned.  Frequently data access patterns require accessing data by range.  Couchbase handles that too as you can read about in the section on xref:++Querying with N1QL.adoc++[Querying JSON with SQL++].
+However, not all data should be hash partitioned.  Frequently data access patterns require accessing data by range.  Couchbase handles that too as you can read about in the section on xref:Querying-JSON-with-SQL++.adoc[Querying JSON with SQL++].
 
 
 == Summary
@@ -28,5 +28,5 @@ core set of operations and a denormalized data model, you can accomplish
 some very powerful things.
 
 Please continue with
-link:Querying%20with%20N1QL.adoc[the next section to learn how to query
+xref:Querying-JSON-with-SQL++.adoc[the next section to learn how to query
 documents with N1QL], or choose to look at other sections of the lab.

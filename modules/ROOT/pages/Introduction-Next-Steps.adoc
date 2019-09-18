@@ -8,10 +8,10 @@ suits your interests.  There are no prerequsites other than being able
 to access the cluster.
 
 
-* link:Logging-into-Couchbase.adoc[Logging into Couchbase]
-* link:Key-Value-Document-Storage.adoc[Key Value Document Storage]
-* link:Querying-JSON-with-SQL++.adoc[Querying with N1QL]
-* link:Full-Text-Search.adoc[Full Text Search]
+* xref:Logging-into-Couchbase.adoc[Logging into Couchbase]
+* xref:Key-Value-Document-Storage.adoc[Key Value Document Storage]
+* xref:Querying-JSON-with-SQL++.adoc[Querying with N1QL]
+* xref:Full-Text-Search.adoc[Full Text Search]
 
 == After Completing the Test Drive
 

@@ -34,7 +34,7 @@ forums] can help you find the answers.
 
 N1QL is a great tool for finding documents that meet strict criteria. It
 is not necessarily the best tool for a generalized search. For that,
-please check out link:Full-Text-Search.adoc[the other lab to learn how
+please check out xref:Full-Text-Search.adoc[the other lab to learn how
 find documents with a full text search]
 
 _Important note: If you can use a key/value operation, you should: it

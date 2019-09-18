@@ -39,7 +39,7 @@ cluster. To start with, the Test Drive has created a single bucket
 called ``sync_gateway''. Later, you’ll be creating another bucket.
 * *Query* - When you want to run N1QL queries, you can do so from this
 tab that takes you to the Query Workbench. More on this in
-link:Querying-JSON-with-SQL++.adoc[Lab 3 - Querying with N1QL].
+xref:Querying-JSON-with-SQL++.adoc[Querying JSON with SQL++].
 
 === Load ``travel-sample'' data
 
@@ -91,4 +91,4 @@ http://developer.couchbase.com/mobile/[Sync Gateway samples].
 == Summary
 
 You are now ready to begin labs 2, 3, and 4. The next lab is about
-link:Key-Value-Document-Storage.adoc[Key Value Document Storage], but you can complete the labs in any order you choose.
+xref:Key-Value-Document-Storage.adoc[Key Value Document Storage], but you can complete the labs in any order you choose.

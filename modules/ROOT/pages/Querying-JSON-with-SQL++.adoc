@@ -1,7 +1,7 @@
 = Lab - Querying with N1QL
 
 You need to have completed
-link:Logging-into-Couchbase.adoc[Logging into Couchbase] before starting this lab.
+xref:Logging-into-Couchbase.adoc[Logging into Couchbase] before starting this lab.
 
 The lab here should take approximately 20 minutes to complete.
 
@@ -199,7 +199,7 @@ VALUES ("lab3document", { "name": "Matthew", "twitter": "@mgroves" } );
 
 This will create a document with the key ``lab3document''. Now try
 finding that document by its key (refer back to
-linkKey-Value-Document-Storage.adoc[the lab on key KV storage] if you need to). You can also
+xref:Key-Value-Document-Storage.adoc[the lab on key KV storage] if you need to). You can also
 use `+RETURNING+` in the query to return back the record that you just
 inserted:
 

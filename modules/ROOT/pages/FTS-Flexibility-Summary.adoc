@@ -18,4 +18,4 @@ This gives one the ability to use natural language to find candidate documents, 
 In this lab, you have learned the basics of using Couchbase Server's built in Full Text Search (FTS).
 You have learned how to create an index, limit the scope of the index, and execute a search.
 
-For a complete reference to all the search options, check out the [FTS reference](https://developer.couchbase.com/documentation/server/current/fts/full-text-intro.html) and the [bleve documentation](http://www.blevesearch.com/docs/Query-String-Query/).
+For a complete reference to all the search options, check out the link:https://developer.couchbase.com/documentation/server/current/fts/full-text-intro.html[FTS reference] and the link:http://www.blevesearch.com/docs/Query-String-Query/[bleve documentation].
