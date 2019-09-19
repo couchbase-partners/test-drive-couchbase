@@ -1,3 +1,5 @@
+:pp: ++
+
 .Introduction
 * xref:Introduction.adoc[Introduction]
 
@@ -22,7 +24,7 @@
 // mainly links to other parts of the documentation site, intros a bit what the experience is like
 
 .Querying JSON with SQL++
-* xref:"Querying-JSON-with-SQL++".adoc[Querying Couchbase with SQL++]
+* xref:Querying-JSON-with-SQL{pp}.adoc[Querying Couchbase with SQL++]
 //* xref:TODO.adoc[Indexing Architecture and Performance]
 //* xref:TODO.adoc[Querying Couchbase Analytics]
 * xref:Querying-Flexibility-Summary.adoc[Flexibility of Couchbase with Query]
